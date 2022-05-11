@@ -1,0 +1,348 @@
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/** cuerpo html **/
+body{
+	font-family: 'Poppins', sans-serif;
+	background: #503066;
+	margin: 0;
+}
+
+.titulo {
+    float: left;
+    height: 60px;
+    width: 190px;
+    border: 1px;
+	z-index: 1;
+}
+.titulo-login {
+height: 60px;
+width: 300px;
+top: 2%;
+position: absolute;
+left: 37%;
+z-index: 1;
+}
+/** menu nav bar**/
+.menu{
+	list-style-type: style;
+	padding: 0;
+	background: #140420;
+	height: auto;
+	width: auto;
+	margin:0;
+	margin-top: -19px;
+}
+
+.menu  > li a{
+	text-decoration: none;
+	color: rgb(214, 128, 253);
+	padding: 20px;
+	display: flex;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #525050;
+	transition: all 0.3s;
+}
+.iconologin {
+padding: auto;
+align-content: flex-end;
+width: 50px;
+height: 50px;
+float:right;
+margin:10px;
+}
+#search {
+	float:right;
+	padding: 5px;
+	margin:  10px;
+    margin-top: 20px;
+	background:#503066;
+	box-sizing: border-box;
+	color: rgb(214, 128, 253);
+	font-family: 'Poppins', sans-serif;
+	border: 0;
+	outline: 0;
+}
+.navegacion ul {
+	list-style: none;
+	
+}
+/** sub menu de juegos **/
+.subjuegos {
+position: absolute;
+background-color: #140420;
+width: auto;
+visibility: hidden;
+opacity: 0;
+transition: opacity 1s;
+}
+
+.subjuegos li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none ;
+}
+
+.menu li:hover .subjuegos {
+visibility: visible;
+opacity: 1;
+}
+
+/** sub menu de noticias**/
+.subnoticia {
+	position: absolute;
+	background-color: #140420;
+	width: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+	}
+	
+	.subnoticia li a {
+		display: block;
+		padding: 15px;
+		text-decoration: none ;
+	}
+	
+	.menu li:hover .subnoticia {
+	visibility: visible;
+	opacity: 1;
+	}
+	
+	/** sub menu de articulo */
+	.subarticulo {
+		position: absolute;
+		background-color: #140420;
+		width: auto;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 1s;
+		}
+		
+		.subarticulo li a {
+			display: block;
+			padding: 15px;
+			text-decoration: none ;
+		}
+		
+		.menu li:hover .subarticulo {
+		visibility: visible;
+		opacity: 1;
+		}
+	/** color de texto "categorias" en los submenus**/
+	#categoria {
+		color: rgb(157, 8, 226);
+	}
+	
+	/*** slider **/
+    .slider {
+    width: 95%;
+	margin: auto;
+	overflow:hidden;
+}
+
+.slider ul {
+display: flex;
+width: 300%;
+animation: cambio 20s infinite;
+background-color: #140420;
+}
+
+.slider li {
+width: 50%;
+list-style: none;
+padding: 0;
+text-align:left;
+font-size: 19px;
+color: rgb(214, 128, 253);
+
+}
+
+.slider img {
+	width: 95%;
+	height: 60%;
+	margin: 0;
+	margin-top: 10px;
+	text-align: center;
+	padding: 0;
+	background-color: #140420;
+}
+
+/**La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una
+ secuencia de animación CSS mediante el establecimiento de keyframes **/
+/** animacion del slider usando keyframes **/
+@keyframes cambio {
+	0% {margin-left: 0%;}
+	20% {margin-left: 0%;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+}
+
+/** texto slider **/
+#texto {
+    font-family: 'Poppins', sans-serif;
+	font-size: 30px; 
+	position: flex; 
+	color: rgb(214, 128, 253);
+    text-decoration: none;
+	background-color:#140420;
+	 }
+
+
+/** seccion noticias recientes **/
+
+/** NO TERMINADO **/
+.titulonoti {
+	text-align: left;
+	vertical-align: middle;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	color:rgb(214, 128, 253);
+	top: 50px;
+	background-color: #140420;
+	margin-right: 980px;
+	margin-left: auto;
+
+}
+
+/** footer de la pagina **/
+.footerindex {
+color: rgb(214, 128, 253);
+background-color: #140420;
+margin-top: 100px;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+position: absolute;
+padding-right: 500px;
+padding-left: 500px;
+}
+.footerlogin {
+	color: rgb(214, 128, 253);
+	background-color: #140420;
+	margin-top: 500px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	padding-right: 500px;
+	padding-left: 500px;
+	padding-bottom: 5px;
+
+}
+footer p {
+	font-size: small;
+}
+
+footer address {
+	font-size: small;
+}
+
+
+/** form **/
+.form {
+	position: absolute;
+	top: 13%;
+    left: 30%;
+	z-index: 1;
+	background:#140420 ;
+	max-width: 500px;
+	height: 400px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgb(214, 128, 253), 0 5px 5px 0 rgb(214, 128, 253);
+	color: rgb(214, 128, 253);
+	font-family: 'Poppins' , sans-serif;
+	
+  }
+
+.form input {
+	font-family: 'Poppins' , sans-serif;
+	outline: 0;
+	background:#503066;
+	width: 80%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: rgb(214, 128, 253);
+  }
+
+  .form button {
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background:#260f35;
+	width: 80%;
+	border: 0;
+	padding: 15px;
+	color: rgb(214, 128, 253);
+	font-size: 12px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+	background: #352344;
+  }
+  .form .message {
+	margin: 15px 0 0;
+	color: #ccc4c4;
+	font-size: 12px;
+  }
+  .form .message a {
+	color: rgb(214, 128, 253);
+	text-decoration: none;
+  }
+  .form .register-form {
+	display: none;
+  }
+  .container {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+	margin: 0 auto;
+  }
+  .container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+  }
+  .container .info {
+	margin: 50px auto;
+	text-align: center;
+  }
+  .container .info h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+	color: #d69bdb;
+  }
+  .container .info span {
+	color: #780a7c;
+	font-size: 12px;
+  }
+  .container .info span a {
+	color: #000000;
+	text-decoration: none;
+  }
+  .container .info span .fa {
+	color: #b44bac;
+  }
