@@ -19,14 +19,26 @@ body{
     border: 1px;
 	z-index: 1;
 }
+
 .titulo-login {
-height: 60px;
+height: 100px;
 width: 300px;
-top: 2%;
+top: 0%;
 position: absolute;
-left: 37%;
+left: 500px;
 z-index: 1;
+padding-bottom: 10px;
 }
+.titulo-register {
+	height: 100px;
+	width: 300px;
+	top: 0%;
+	position: absolute;
+	left: 500px;
+	z-index: 1;
+	padding-bottom: 10px;
+}
+
 /** menu nav bar**/
 .menu{
 	list-style-type: style;
@@ -180,7 +192,7 @@ color: rgb(214, 128, 253);
 	background-color: #140420;
 }
 
-/**La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una
+/**La regla arroba @keyframes permite controlar los pasos intermedios en una
  secuencia de animación CSS mediante el establecimiento de keyframes **/
 /** animacion del slider usando keyframes **/
 @keyframes cambio {
@@ -284,7 +296,7 @@ footer address {
 	color: rgb(214, 128, 253);
   }
 
-  .form button {
+  .form .submit {
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	outline: 0;
@@ -298,7 +310,7 @@ footer address {
 	transition: all 0.3 ease;
 	cursor: pointer;
   }
-  .form button:hover,.form button:active,.form button:focus {
+  .form .submit:hover,.form .submit:active,.form .submit:focus {
 	background: #352344;
   }
   .form .message {
@@ -309,9 +321,6 @@ footer address {
   .form .message a {
 	color: rgb(214, 128, 253);
 	text-decoration: none;
-  }
-  .form .register-form {
-	display: none;
   }
   .container {
 	position: relative;
@@ -339,10 +348,47 @@ footer address {
 	color: #780a7c;
 	font-size: 12px;
   }
-  .container .info span a {
+  .container .info span a { 
 	color: #000000;
 	text-decoration: none;
   }
   .container .info span .fa {
 	color: #b44bac;
   }
+
+  .ok {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding: 9px;
+	background-color:#780a7c;
+	color: rgb(214, 128, 253);
+    top: 80%;
+	z-index: 1;
+  }
+
+.ok2 {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	background-color:#780a7c;
+	color: rgb(214, 128, 253);
+    top: 1px;
+	z-index: 1;
+	margin: 0;
+
+}
+  .bad{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding: 9px;
+	background-color: rgb(129, 29, 29);
+	color: rgb(196, 109, 109);
+	top: 80%;
+	z-index: 1;
+	
+  }
+  
+  
