@@ -29,6 +29,7 @@ left: 500px;
 z-index: 1;
 padding-bottom: 10px;
 }
+
 .titulo-register {
 	height: 100px;
 	width: 300px;
@@ -234,15 +235,16 @@ color: rgb(214, 128, 253);
 }
 
 /** footer de la pagina **/
-.footerindex {
+.footerhome {
 color: rgb(214, 128, 253);
 background-color: #140420;
 margin-top: 100px;
 text-align: center;
 font-family: 'Poppins', sans-serif;
 position: absolute;
-padding-right: 500px;
-padding-left: 500px;
+margin-bottom: 0;
+width: 100%;
+
 }
 .footerlogin {
 	color: rgb(214, 128, 253);
@@ -251,16 +253,16 @@ padding-left: 500px;
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	position: absolute;
-	padding-right: 500px;
-	padding-left: 500px;
 	padding-bottom: 5px;
+	margin-bottom: 0;
+	width: 100%;
 
 }
-footer p {
+.footer p {
 	font-size: small;
 }
 
-footer address {
+.footer address {
 	font-size: small;
 }
 
@@ -365,6 +367,7 @@ footer address {
 	color: rgb(214, 128, 253);
     top: 80%;
 	z-index: 1;
+	font-family: 'Poppins', sans-serif;
   }
 
 .ok2 {
@@ -377,6 +380,7 @@ footer address {
     top: 1px;
 	z-index: 1;
 	margin: 0;
+	font-family: 'Poppins', sans-serif;
 
 }
   .bad{
@@ -388,7 +392,9 @@ footer address {
 	color: rgb(196, 109, 109);
 	top: 80%;
 	z-index: 1;
+	font-family: 'Poppins', sans-serif;
 	
   }
   
+
   

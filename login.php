@@ -21,7 +21,7 @@
 
 <div class="login">
 
-    <p><a href="index.php"><img class="titulo-login" alt="poweron" src="img\logo\Logo.png"> </a></p>
+    <p><a href="home.php"><img class="titulo-login" alt="poweron" src="img\logo\Logo.png"> </a></p>
     <div class="form">
 
     <form class="login-form" action="validacion.php" method="POST">
